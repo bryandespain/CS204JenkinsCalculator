@@ -118,13 +118,10 @@ public class CalculatorTestThorough {
     public void createUniqueIDTest(){
         Calculator myCalculator = new Calculator();
         Set<String> uniqueIDBank = new HashSet<String>();
-
         for(int i = 0; i < 100; i++){
             uniqueIDBank.add(myCalculator.createUniqueID("CS204"));
         }
-
         assertEquals(100 , uniqueIDBank.size());
-
         for(String targetString:uniqueIDBank){
             assertTrue(targetString.contains("CS204"));
         }
