@@ -111,7 +111,6 @@ public class CalculatorTestThorough {
             assertEquals("1111100111" , myCalculator.intToBinaryNumber(999));
             assertEquals("1111111111" , myCalculator.intToBinaryNumber(1023));
         }
-
     }
 
     @Test
